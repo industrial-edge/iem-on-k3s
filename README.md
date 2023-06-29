@@ -55,8 +55,7 @@ To deploy Industrial Edge Management on a K3s cluster, you must perform the foll
 <!-- [Build application](docs/Installation.md#build-application) -->
 
 ## Usage
-
-When the app is installed, how can I use it? Usually some basic UI description to prove that the app is working correctly.
+After successfully following all the installation steps, you will have a fully operational instance of IEM (Industrial Edge Management) deployed within a local Kubernetes (K3s) cluster. This instance is now ready to be utilized within the Industrial Edge Ecosystem. For comprehensive guidance on operating the IEM instance, please consult the official Industrial Edge Documentation - [Industrial Edge Management - Operation](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/operation/maintenance_ui/overview.html). 
 
 ## Documentation
 You can find further documentation and help in the following links
