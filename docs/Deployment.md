@@ -155,7 +155,10 @@ Helm chart deployed
 Please make sure to save this output in a secure location as contains the initial login credentials for the IEM.
 
 #### Deploy Ingress of the IEM on the K3s Cluster
-For configuring the ingress rule correctly you need to get the service name of the Industrial Edge Gateway (API gateway based on [Kong OSS](https://konghq.com/install#kong-community)).
+The Industrial Edge offers an enhanced API gateway built on [Kong OSS](https://konghq.com/install#kong-communit), serving as the primary access point to the system. It handles authentication, verifies session cookies, and generates JSON web tokens for internal API requests. In a Kubernetes (K8s) environment, there are various deployment options available for the API gateway. By default, it is deployed as a ClusterIP service type. For initial configuration of the Traefik ingress rule, it is essential to obtain the service name of the Industrial Edge Gateway.
+
+![IEM Gateway and Ingress controller architecture](/docs/graphics/gateway-ingress.png)
+*IEM Gateway and Ingress controller architecture*
 
 Get service name of Industrial Edge Gateway:
 ```bash
@@ -235,7 +238,7 @@ spec:
 ```
 Insert values for `hosts` and `host` according to the value set for `hostname` in the template file and service name of Industrial Edge Gateway in `ingress.yaml`.
 
-Deploy the Ingress rule:
+Finally, deploy the Ingress rule:
 ```bash
 kubectl apply -f ingress.yaml
 ```
