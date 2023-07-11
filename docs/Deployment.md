@@ -57,7 +57,7 @@ Use the `template` command ot create a quickstart configuration file:
 ```bash
 ieprovision template > template.yaml
 ```
-The template file looks like similar to the following example:
+The template file looks similar to the following example:
 ```yaml
 central-auth:
     keycloak:
