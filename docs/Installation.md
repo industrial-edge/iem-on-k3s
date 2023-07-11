@@ -5,10 +5,8 @@ K3s - Lightweight Kubernetes. Easy to install, half the memory, all in a binary 
   - [Check Status of K3s](#check-status-of-k3s)
 
 ## Install Script
-K3s provides an installation script that is a convenient way to install it as a service on systemd or openrc based systems. This script is available at https://get.k3s.io. To install K3s using this method, just run:
-```bash
-curl -sfL https://get.k3s.io | sh -
-```
+K3s provides an installation script that is a convenient way to install it as a service on systemd or openrc based systems. This script is available at https://get.k3s.io. To install K3s you can easily follow the [Quick Start Guide](https://docs.k3s.io/quick-start).
+
 After running this installation:
 * The K3s service will be configured to automatically restart after node reboots or if the process crashes or is killed
 * Additional utilities will be installed, including kubectl, crictl, ctr, k3s-killall.sh, and k3s-uninstall.sh
