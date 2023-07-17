@@ -258,7 +258,7 @@ To proceed, add the following line to the `/etc/hosts` file in a format of `<iem
 > **Note**  
 > Please ensure to adjust the IP and domain according to your specific setup.
 
-Next, open your preferred web browser and enter the chosen `hostname`.
+Next, open your preferred web browser and access the chosen `hostname` address using HTTPS protocol, for example: `https://iem.edge.siemens.com`.
 
 You will be prompted to log in to your IEM instance. Please utilize the credentials you set during the installation process, as specified in `template.yaml`, and the saved output of the installation.
 
