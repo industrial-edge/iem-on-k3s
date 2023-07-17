@@ -5,7 +5,9 @@ To deploy the Industrial Edge Management on a K3s cluster, you must perform the 
 * [Create an IEM instance in the Industrial Edge Hub (IEH)](/docs/Deployment.md#create-an-iem-instance-in-the-industrial-edge-hub)
 * [Download and install the IE Provisioning CLI](/docs/Deployment.md#download-nad-install-the-ie-provisioning-cli)
 * [Install the IEM on the K3s Cluster](/docs/Deployment.md#install-the-iem)
-
+  
+Afterwards, you can:
+* [Access the IEM](/docs/Deployment.md#access-the-iem)
 
 ## Create an IEM Instance in the Industrial Edge Hub
 1. Log into the Industrial Edge Hub.
@@ -242,3 +244,22 @@ Finally, deploy the Ingress rule:
 ```bash
 kubectl apply -f ingress.yaml
 ```
+## Access the IEM
+You have successfully configured a DNS-based Industrial Edge Management (IEM) system. To access the IEM, the connecting machine must be able to resolve the IEM domain name to its corresponding IP.
+
+There are two methods to achieve this. The first approach involves adding direct static addressing to each connecting device trough the `hosts` file. Alternatively, you can use a DNS Server.
+
+In typical scenario,a private DNS Server with your custom zone and addresses would be employed for all machines that needs to access the IEM (Edge Devices, Host & Operator machines). For the sake of simplicity in this application example, we will edit the `/etc/hosts` file with static address resolution for the IEM system.
+
+To proceed, add the following line to the `/etc/hosts` file in a format of `<iem.host.ip>␣<hostname>`, for instance:
+```
+192.168.1.100 iem.edge.siemens.com
+```
+> **Note**  
+> Please ensure to adjust the IP and domain according to your specific setup.
+
+Next, open your preferred web browser and enter the chosen `hostname`.
+
+You will be prompted to log in to your IEM instance. Please utilize the credentials you set during the installation process, as specified in `template.yaml`, and the saved output of the installation.
+
+![IEM Log-In Page](/docs/graphics/iem-log-in-page.png)
