@@ -55,14 +55,16 @@ To deploy Industrial Edge Management on a K3s cluster, you must perform the foll
 <!-- [Build application](docs/Installation.md#build-application) -->
 
 ## Usage
-After successfully following all the installation steps, you will have a fully operational instance of IEM (Industrial Edge Management) deployed within a local Kubernetes (K3s) cluster. This instance is now ready to be utilized within the Industrial Edge Ecosystem. For comprehensive guidance on operating the IEM instance, please consult the official Industrial Edge Documentation - [Industrial Edge Management - Operation](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/operation/maintenance_ui/overview.html). 
+After successfully following all the installation steps, you will have a fully operational instance of IEM (Industrial Edge Management) deployed within a local Kubernetes (K3s) cluster. This instance is now ready to be utilized within the Industrial Edge Ecosystem. For comprehensive guidance on operating the IEM instance, please consult the official Industrial Edge Documentation - [Industrial Edge Management - Operation](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/k8s/index.html). 
 
 ## Documentation
 You can find further documentation and help at the following links:
 
+* [Industrial Edge Official Documentation](https://industrial-edge.io)
 * [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
+* [Industrial Edge Mendix Forum](https://forum.mendix.com/link/space/industrial-edge)
 * [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
-* [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
+* [Industrial Edge Landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
 * [Industrial Edge GitHub page](https://github.com/industrial-edge)
 
 ## Contribution

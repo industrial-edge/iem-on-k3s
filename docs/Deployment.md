@@ -49,10 +49,10 @@ Change Access rights to the kubeconfig file to use kubectl without sudo privileg
 sudo chown $USER /etc/rancher/k3s/k3s.yaml
 ```
 ### Install the IEM
-Before proceeding with the installation, ensure that the [general requirements of IEM 2.0](https://industrial-edge.code.siemens.io/product/documentation/admin-operator-documentation/k-8-s-cluster/general-reqs.html) are satisfied. The following guide describes the minimal installation steps for a fully functional IEM deployment. For detailed information on the installation process and available options, refer to the official [IEM documentation](https://industrial-edge.code.siemens.io/product/documentation/admin-operator-documentation/k-8-s-cluster/index.html).
+Before proceeding with the installation, ensure that the [general requirements of IEM 2.0](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/k8s/overview/general-reqs.html) are satisfied. The following guide describes the minimal installation steps for a fully functional IEM deployment. For detailed information on the installation process and available options, refer to the official [IEM documentation](https://industrial-edge.io).
 
 #### Create a certificate chain for TLS communication
-To set up the IEM, SSL-certificates are required. You can refer to [this documentation](https://industrial-edge.code.siemens.io/product/documentation/admin-operator-documentation/k-8-s-cluster/minikube/deployment-with-minikube.html#ingress-controller-activation) as an example of how to create certificates for your IEM instance.
+To set up the IEM, SSL-certificates are required. You can refer to [this documentation](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/k8s/getting_started/setup_cluster/minikube/deployment-with-minikube.html#ingress-controller-activation) as an example of how to create certificates for your IEM instance.
 
 #### Prepare the ieprovision template file
 Use the `template` command to create a quickstart configuration file:
