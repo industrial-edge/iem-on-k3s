@@ -1,6 +1,6 @@
 # Industrial Edge Management on K3s 
 
-Industrial Edge can be installed on any Kubernetes (K8s) cluster.  
+Industrial Edge Management System can be installed on any compliant Kubernetes (K8s) cluster.  
 This documentation describes the complete installation process of IEM 2.0 on K3s distribution.
 
 - [Industrial Edge Management on K3s](#industrial-edge-management-on-k3s)
@@ -50,9 +50,6 @@ To deploy Industrial Edge Management on a K3s cluster, you must perform the foll
 * [Create an IEM instance in the Industrial Edge Hub (IEH)](/docs/Deployment.md#create-an-iem-instance-in-the-industrial-edge-hub)
 * [Download and install the IE Provisioning CLI](/docs/Deployment.md#download-nad-install-the-ie-provisioning-cli)
 * [Install the IEM on the K3s Cluster](/docs/Deployment.md#install-the-iem)
-
-
-<!-- [Build application](docs/Installation.md#build-application) -->
 
 ## Usage
 After successfully following all the installation steps, you will have a fully operational instance of IEM (Industrial Edge Management) deployed within a local Kubernetes (K3s) cluster. This instance is now ready to be utilized within the Industrial Edge Ecosystem. For comprehensive guidance on operating the IEM instance, please consult the official Industrial Edge Documentation - [Industrial Edge Management - Operation](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/k8s/index.html). 
